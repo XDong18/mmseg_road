@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/models/dla34up_road.py',
-    '../_base_/datasets/bdd100k_road.py.py',
+    '../_base_/datasets/bdd100k_road.py',
 ]
 
 img_norm_cfg = dict(

@@ -24,11 +24,11 @@ model = dict(
             in_channels=32,
             num_classes=3,
             dropout_ratio=0,
+            ignore_index=255
             loss_decode=dict(
                      type='CrossEntropyLoss',
                      use_sigmoid=False,
-                     loss_weight=1.0,
-                     ignore_index=255),
+                     loss_weight=1.0),
             )
     )
 # model training and testing settings

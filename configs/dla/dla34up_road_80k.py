@@ -12,7 +12,7 @@ train_pipeline = [
     dict(type='LoadAnnotations'),
     dict(type='RandomCrop', crop_size=crop_size),
     dict(type='RandomFlip', flip_ratio=0.5),
-    dict(type='RandomJitter'),
+    # dict(type='RandomJitter'),
     dict(type='Normalize', **img_norm_cfg),
     dict(type='Pad', size_divisor=32, pad_val=0, seg_pad_val=255),
     dict(type='DefaultFormatBundle'),
